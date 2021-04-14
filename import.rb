@@ -8,7 +8,7 @@ result.each do |one|
   book2 = one['本②のタイトル']
   book3 = one['本③のタイトル']
   if !book1.nil? && !book_array.include?(one['本①のタイトル'])
-	  arr.push(one['名前'].concat(':'),one['本①のタイトル'],one['本①の著者名'],one['本①の出版年'])
+    arr.push(one['名前'].concat(':'),one['本①のタイトル'],one['本①の著者名'],one['本①の出版年'])
     book_array.push(one['本①のタイトル'],one['本②のタイトル'],one['本③のタイトル'])
     puts arr.join('　')
   elsif !book2.nil? && !book_array.include?(one['本②のタイトル'])
